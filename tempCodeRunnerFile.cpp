@@ -1,0 +1,2 @@
+    pera.deposit();
+    pera.displayAccount();
