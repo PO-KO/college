@@ -73,7 +73,9 @@ public:
         int depMon;
         cout << "Enter the amount of money you want to deposit : ";
         cin >> depMon;
+        cout << depMon;
         depMon = depMon - (3 * depMon / 100);
+        cout << depMon;
         balance += depMon;
     }
     void withdraw()
@@ -138,14 +140,19 @@ int main()
     // display(a1);
 
     PersonalAccount pera(514);
-    ProfessionalAccount proa(397); 
-    // pera.deposit();
-    // pera.displayAccount();
+    ProfessionalAccount proa(514); 
+
+    // proa.deposit();
+    // proa.displayAccount();
 
     // proa.withdraw();
     // proa.displayAccount();
 
-    display(&pera);
+    // display(&pera);
+    // pera.displayAccount();
+
+    display(&proa);
+    proa.displayAccount();
 
     // a1.deposit();
     // a1.displayAccount();
