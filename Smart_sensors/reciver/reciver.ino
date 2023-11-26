@@ -122,7 +122,7 @@ void loop() {
 
   if (httpRequest("GET", String("/external/api/get?token=") + BLYNK_AUTH_TOKEN + "&pin=V0", "", temp)) {
     Serial.print("Temperature: ");
-    Serial.println(temp.);
+    Serial.println(temp);
   }
 
   if (httpRequest("GET", String("/external/api/get?token=") + BLYNK_AUTH_TOKEN + "&pin=V1", "", hum)) {
