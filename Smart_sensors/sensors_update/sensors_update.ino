@@ -23,9 +23,9 @@ void setup() {
   Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass, "blynk.cloud", 80);
   dht.begin();
   //Call the function
-  timer.setInterval(2000L, soilMoistureSensor);
-  timer.setInterval(2000L, DHT11sensor);
-  timer.setInterval(2000L, LDRsensor);
+  timer.setInterval(500L, soilMoistureSensor);
+  timer.setInterval(500L, DHT11sensor);
+  timer.setInterval(500L, LDRsensor);
 }
 
 
